@@ -223,6 +223,9 @@ ul.dropdown-menu li a:hover {
 
 /* Details page */
 
+#groupDetails td:first-child {
+  text-align: center;
+}
 /*#graphsViewModal .modal-dialog { width: 60% }*/
 /*.modal-body .row {
     height: 100%;

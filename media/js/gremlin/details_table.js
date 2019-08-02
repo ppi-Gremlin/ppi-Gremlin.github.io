@@ -53,9 +53,9 @@ $(document).ready(function() {
 
     	var $col1 = $("<td></td>").appendTo($row);
 
-    	var ligIconHtml = '<a href="#" class="ligand-view" title="Click here to see all the ligands of this group." group="' + d.key + '"><span class="fa fa-share-alt"></span></a>';
+    	// var ligIconHtml = '<a href="#" class="ligand-view" title="Click here to see all the ligands of this group." group="' + d.key + '"><span class="fa fa-share-alt"></span></a>';
 		  var graphIconHtml = '<a href="#" class="graph-view" title="Click here to see all the input graphs of this group." group="' + d.key + '"><span class="fa fa-connectdevelop"></span></a>';
-    	$col1.append( d.key + " " + ligIconHtml + " " + graphIconHtml );
+    	$col1.append( d.key + " " + graphIconHtml );
 
     	var $col2 = $("<td></td>").appendTo($row);
 
