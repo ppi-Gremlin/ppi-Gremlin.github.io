@@ -1363,38 +1363,38 @@ $(document).ready(function() {
         return acc
     },{source:new Object(),target:new Object()})
 
-    function addSelection(type) {
-        if(type == "style")
-            console.log("style")
-        else if(type == "surface")
-            console.log("surface")
-        else if(type == "label")
-            console.log("label")
-    }
+    // function addSelection(type) {
+    //     if(type == "style")
+    //         console.log("style")
+    //     else if(type == "surface")
+    //         console.log("surface")
+    //     else if(type == "label")
+    //         console.log("label")
+    // }
     
-    function interViewControl(viewer,obj) {
+    // function interViewControl(viewer,obj) {
 
-        var styles = viewer.styles[obj.support + "-" + obj.graph]
+    //     var styles = viewer.styles[obj.support + "-" + obj.graph]
 
-        console.log(styles)
-        $('#addStyle').on('click', function() {
-            addSelection('style')
-            $('#selection-list').append(StylesWindow())
+    //     console.log(styles)
+    //     $('#addStyle').on('click', function() {
+    //         addSelection('style')
+    //         $('#selection-list').append(StylesWindow())
 
-        })
+    //     })
 
-        $('#addSurface').on('click', function() {
-            addSelection('surface')
-        })
+    //     $('#addSurface').on('click', function() {
+    //         addSelection('surface')
+    //     })
 
-        $('#addLabelRes').on('click', function() {
-            addSelection('label')
-        })
-    }
+    //     $('#addLabelRes').on('click', function() {
+    //         addSelection('label')
+    //     })
+    // }
 
-    function loadStylesSpecs(styles) {
+    // function loadStylesSpecs(styles) {
 
-    }
+    // }
 
     function StylesWindow() {
         box=//"<div class='row'>" +

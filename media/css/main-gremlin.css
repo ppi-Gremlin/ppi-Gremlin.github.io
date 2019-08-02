@@ -79,7 +79,7 @@ table.dataTable thead .sorting_asc {
 
 #ligandsViewModal img { width: 100%; cursor: pointer; }
 
-#interViewModal .modal-dialog { width:100%}
+#interViewModal .modal-dialog { width:60%}
 
 #interViewModal .inter-view-div {
   width: 600px;
@@ -94,7 +94,7 @@ table.dataTable thead .sorting_asc {
 }
 
 #interViewModal .modal-content {
-  width: 1080px;
+  width: 720px;
   height: 720px
 }
 
@@ -104,11 +104,12 @@ table.dataTable thead .sorting_asc {
 }
 
 .main-inter-view-div {
-  float:left;
+  /*float:left;*/
   width: 650px;
   height:100%;
   overflow: hidden;
-  display: inline-block;
+  margin: auto;
+  /*display: inline-block;*/
 }
 
 #inter-view-side-nav {
