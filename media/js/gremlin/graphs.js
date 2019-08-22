@@ -24,7 +24,7 @@ $(document).ready(function() {
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        var res_lig_title = (d.isLigand) ? "Ligand" : "Residue";
+        var res_lig_title = (d.isLigand) ? "Ligand Residue" : "Residue";
         return "<strong>" + res_lig_title + ":</strong> <span style='color:white'>" + d.residueName + "</span><br><br>" +
           "<strong>" + res_lig_title + " Number:</strong> <span style='color:white'>" + d.residueNumber + "</span><br><br>" +
           "<strong>Atom name:</strong> <span style='color:white'>" + d.atomName + "</span><br><br>" +
@@ -163,7 +163,7 @@ $(document).ready(function() {
     	updateGraphDivs();
     });
 
-    $('body').on("click", ".show-ligand-link", displayLigands);
+    //$('body').on("click", ".show-ligand-link", displayLigands);
 
   	$('#ligandsViewModal').on('click','.thumbnail img',function(){
     	window.open(this.src,"_blank");
@@ -397,9 +397,9 @@ $(document).ready(function() {
             var findResiduesHtml =
                 '<div class="row secondary-opt">' +
                     '<div class="col-md-12">' +
-                        '<label class="col-md-3 control-label">Search for a residue, ligand or atom:</label>' +
+                        '<label class="col-md-3 control-label">Search for a residue or atom:</label>' +
                         '<div class="col-md-3">' +
-                            '<input type="text" class="form-control input-xs search-nodes-input" placeholder="E.g.: LEU83, X01, N, LEU83:N, X01:N8">'
+                            '<input type="text" class="form-control input-xs search-nodes-input" placeholder="E.g.: LEU83, N, LEU83:N">'
                         '</div>' +
                     '</div>' +
                 '</div>';
@@ -619,7 +619,7 @@ $(document).ready(function() {
                 panelBox.append("button").attr("class", "btn btn-box-tool").attr("data-widget","collapse").append("i").attr("class","fa fa-minus");
 	            
                 var molText = '<strong>' + obj.pdb + ":" + obj.chain + '</strong>, <strong>Graph:</strong> ' + obj.graph + ', ' + 
-                    '</br><strong>Ligand:</strong> ' + '<a href="#" class="clear-link show-ligand-link" pdb="' + obj.pdb + '" group="' + group + '">' + graphObj.ligand + '</a>';
+                    '</br><strong>Ligand Chain:</strong> ' +  graphObj.ligand;
                 var rowHtml = '<p>' + molText + '</p>';
 	            $( panelHead[0] ).append(rowHtml);
 
